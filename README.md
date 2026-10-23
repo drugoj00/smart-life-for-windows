@@ -1,5 +1,7 @@
 [English](README.md) · [Українська](README.uk.md) · [Русский](README.ru.md)
 
+🌐 All our programs: https://drugoj00.github.io/
+
 # Smart Life for Windows
 
 Smart Life sockets in a Windows window: tiles with buttons, timers, your own scenes and schedules.
