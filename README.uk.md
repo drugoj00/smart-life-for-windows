@@ -1,5 +1,7 @@
 [English](README.md) · [Українська](README.uk.md) · [Русский](README.ru.md)
 
+🌐 Усі наші програми: https://drugoj00.github.io/
+
 # Smart Life для Windows
 
 Розумні розетки Smart Life у вікні Windows: плитки з кнопками, таймери, власні сценарії та розклади.
