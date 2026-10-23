@@ -6,6 +6,8 @@ Smart Life sockets in a Windows window: tiles with buttons, timers, your own sce
 
 A free Windows program that shows the sockets and switches of your Smart Life (Tuya) account in one tidy window. Switch them on and off with the mouse, set timers, build your own scenes, run schedules and open every home in a separate window. Sign-in needs no password: you scan the QR code in the program window once with the Smart Life scanner.
 
+⭐ If the program is useful, please star this repository: it costs nothing and helps other people find it.
+
 ## Download
 
 **Version 1.0.** [SmartLifeForWindows-Setup-1.0.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
