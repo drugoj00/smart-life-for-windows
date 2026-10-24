@@ -2,6 +2,8 @@
 
 🌐 All our programs: https://drugoj00.github.io/
 
+<img src="https://drugoj00.github.io/phone-in-window-with-sound/sl_icon.png" alt="" width="96" align="right">
+
 # Smart Life for Windows
 
 Smart Life sockets in a Windows window: tiles with buttons, timers, your own scenes and schedules.
