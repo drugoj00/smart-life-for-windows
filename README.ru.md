@@ -14,7 +14,7 @@
 
 **Версия 1.0.** [SmartLifeForWindows-1.0.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
 
-SHA-256: `4c71c8aeccc2017a0b2a83b39e8923e4bfd169adf9278735530a7d52ba8b42d0`
+SHA-256: `30bf54ce391e7e2524d16dcf0081dcf6b73711fd4ae29ca4f9a86492dac52351`
 
 ## Возможности
 
