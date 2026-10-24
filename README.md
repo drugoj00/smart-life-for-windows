@@ -169,7 +169,7 @@ The program talks only to Tuya servers, sends nothing to the developer, and has 
 - The program is unofficial and not affiliated with Tuya or Smart Life. For QR sign-in it uses the public identifier of the Home Assistant integration.
 - Devices with a switch are controlled (sockets, relays, plain lamps). Sensors, cameras, colour lamps and the like are not controlled; a device without a switch is shown as “no switch”.
 - Smart Life automations are not available through this interface.
-- Your own scenes and schedules work only while the program is running.
+- Your own scenes and schedules work only while the program is running (you can minimize the window to the tray and the program keeps working; after “Quit” or when the computer is off, schedules do not run).
 - Tested on Windows 11 with a Smart Life account (two homes, about 30 sockets). 64-bit Windows 10 or 11 is required.
 
 ## Built with
