@@ -14,7 +14,7 @@ A free Windows program that shows the sockets and switches of your Smart Life (T
 
 **Version 1.0.** [SmartLifeForWindows-1.0.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
 
-SHA-256: `a49e0cb0815e68336fb57d249c2b0667e69c5447c72f752b4c83fa5650de1b8b`
+SHA-256: `4c71c8aeccc2017a0b2a83b39e8923e4bfd169adf9278735530a7d52ba8b42d0`
 
 ## Features
 
@@ -26,6 +26,7 @@ SHA-256: `a49e0cb0815e68336fb57d249c2b0667e69c5447c72f752b4c83fa5650de1b8b`
 - Confirmation before turning off important sockets (computer, router and others; the list can be changed).
 - A “Turn everything off” button for a home (important sockets are left alone).
 - A separate window for each home: right-click the home button. Windows remember their size and position and reopen at start.
+- Tray icon by the clock: click it to show or hide the window; the menu has your favourite sockets (● on, ○ off; add them with a right click on a tile → “Show in the tray menu”), all sockets by home, “Turn everything off”, your scenes and “Quit”. In “⋯” you can switch on “Keep running in the tray when the window is closed” and “Start with Windows (in the tray)”.
 - Your own scenes: a set of sockets with “turn on” or “turn off”, run with one button.
 - Schedules: at a chosen time and weekdays turn a socket on or off or run your own scene.
 - Smart Life tap-to-run scenes appear on their own tab if you have any.
@@ -138,6 +139,8 @@ If you have “tap-to-run” scenes in the Smart Life app, the program shows a �
 ### 13. Theme, language, window size
 
 The “⋯” button at the top right: “Light theme” / “Dark theme”, “Language” (Auto, Русский, Українська, English; the program restarts after you choose) and “Sign out”. The default language is taken from the Windows language.
+
+The same menu has two switches: “Keep running in the tray when the window is closed” (the cross hides the window by the clock and the program keeps running; to quit, right-click the tray icon → “Quit”) and “Start with Windows (in the tray)” (when you sign in to Windows the program starts minimized to the tray; turning this on also turns on keeping it in the tray). Tray icon by the clock: a click shows or hides the window, a right click opens the menu: open the window, favourite sockets (● on, ○ off; a click switches it, important sockets ask for confirmation), “All sockets” by home, “Turn everything off”, “My scenes”, “Quit”. Favourites are set with a right click on a tile → “Show in the tray menu”.
 
 On the very first start the window is narrow (two columns). Window sizes and positions are remembered. If all tiles do not fit, they become more compact; when it is tight even so, a scroll bar appears and the mouse wheel scrolls one row at a time, so the last row is never cut off.
 
