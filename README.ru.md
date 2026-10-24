@@ -12,9 +12,9 @@
 
 ## Скачать
 
-**Версия 1.0.** [SmartLifeForWindows-Setup-1.0.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
+**Версия 1.0.** [SmartLifeForWindows-1.0.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
 
-SHA-256: `856687083e8f6f6ed2ea60a5db03d2f4694c36236c1a9ccd70ac3d53919538be`
+SHA-256: `a49e0cb0815e68336fb57d249c2b0667e69c5447c72f752b4c83fa5650de1b8b`
 
 ## Возможности
 
@@ -55,7 +55,7 @@ Windows 10 или 11 (64-бит); аккаунт Smart Life (или Tuya Smart) 
 
 ### 1. Установка
 
-Скачайте установщик SmartLifeForWindows-Setup-1.0.exe (около 59 МБ) и запустите его. Windows спросит разрешение: программа ставится в C:\Program Files\SmartLifeForWindows. Если отказать, она встанет в папку пользователя. В окне установки можно добавить ярлык на рабочий стол (по умолчанию его нет) и сразу запустить программу. Ярлык в меню «Пуск» создаётся всегда. Язык установщика (русский, украинский, английский) выбирается по языку Windows, его можно сменить списком в правом верхнем углу окна.
+Скачайте установщик SmartLifeForWindows-1.0.exe (около 59 МБ) и запустите его. Windows спросит разрешение: программа ставится в C:\Program Files\SmartLifeForWindows. Если отказать, она встанет в папку пользователя. В окне установки можно добавить ярлык на рабочий стол (по умолчанию его нет) и сразу запустить программу. Ярлык в меню «Пуск» создаётся всегда. Язык установщика (русский, украинский, английский) выбирается по языку Windows, его можно сменить списком в правом верхнем углу окна.
 
 Удаляется программа обычным способом: «Параметры Windows» → «Приложения». Установщик спросит, удалять ли сохранённый вход.
 
