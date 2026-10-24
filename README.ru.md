@@ -2,6 +2,8 @@
 
 🌐 Все наши программы: https://drugoj00.github.io/
 
+<img src="https://drugoj00.github.io/phone-in-window-with-sound/sl_icon.png" alt="" width="96" align="right">
+
 # Smart Life для Windows
 
 Умные розетки Smart Life в окне Windows: плитки с кнопками, таймеры, свои сценарии и расписания.
