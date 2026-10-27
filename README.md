@@ -14,9 +14,15 @@ A free Windows program that shows the sockets and switches of your Smart Life (T
 
 ## Download
 
-**Version 1.0.** [SmartLifeForWindows-1.0.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
+**Version 1.1.** [SmartLifeForWindows-1.1.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
 
-SHA-256: `80ac52bb8471183892d953a0575c8b64332aa1537ac173f252a16a723c418441`
+SHA-256: `2f6c43dfb4f314d97e1fea3fa28cdbb71ebafec3b4458d54cc5529ec3b2a68af`
+
+## What's new in 1.1
+
+- Multi-channel sockets (230 V and USB) and power strips: a button per channel on the tile and in the device window.
+- “Turn the device on/off” (tray menu, “Turn everything off”, scenes, schedules, timer) acts on all channels.
+- Fixed: a combined socket controlled only one channel (USB), the other was not shown.
 
 ## Features
 
@@ -25,6 +31,7 @@ SHA-256: `80ac52bb8471183892d953a0575c8b64332aa1537ac173f252a16a723c418441`
 - Device window: click a tile to open a window with a big button, electricity (power, voltage, current, energy), the socket timer and settings, as in the Smart Life app.
 - Tile order: drag tiles with the mouse, the order is remembered for each home (by default as Tuya returns it).
 - A turn-off timer on every tile (15 minutes, 30 minutes, 1, 2 or 4 hours).
+- Multi-channel sockets and power strips: a device with several channels (230 V and USB, socket 1, 2, 3) gets a button per channel on its tile and in the device window; the common “turn on/off” (tray menu, “Turn everything off”, scenes, schedules, timer) acts on all channels.
 - Confirmation before turning off important sockets (computer, router and others; the list can be changed).
 - A “Turn everything off” button for a home (important sockets are left alone).
 - A separate window for each home: right-click the home button. Windows remember their size and position and reopen at start.
@@ -37,6 +44,8 @@ SHA-256: `80ac52bb8471183892d953a0575c8b64332aa1537ac173f252a16a723c418441`
 - QR sign-in without a password (the user code is remembered) and a backup email and password sign-in with a country list.
 
 ## Screenshots
+
+![Multi-channel sockets and power strips: a button per channel (1, 2, USB).](screenshots/en/14-multi.png)
 
 ![Main window (dark theme): home tiles, a wide tile, a timer on a tile.](screenshots/en/01-main-dark.png)
 
@@ -58,7 +67,7 @@ Windows 10 or 11 (64-bit); a Smart Life (or Tuya Smart) account and a phone with
 
 ### 1. Installation
 
-Download the installer SmartLifeForWindows-1.0.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
+Download the installer SmartLifeForWindows-1.1.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
 
 Uninstall it the usual way: Windows Settings → Apps. The uninstaller asks whether to delete the saved sign-in too.
 
