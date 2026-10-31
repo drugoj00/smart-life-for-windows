@@ -25,13 +25,14 @@ SHA-256: `78fe9b75522227313845a7bbbb35071ad95d0f9cd60890fa864b303a94eca809`
 - Desktop shortcuts for sockets and scenes; Windows notifications.
 - Server agent: schedules keep running while the computer is off.
 - Faster: a shortcut runs within a second, the socket status in the window changes at once.
-- About window, transfer view, tooltips on every button, compact menus, a tile width checkbox.
+- About window, transfer view, tooltips on every button, compact menus.
+- A tile can be stretched to two columns: the “Wide tile” checkbox in the device window.
 - Fixed: Apps & features showed version 1.0.
 
 ## Features
 
 - Socket tiles grouped by home: name, state (on, off, offline) and a large round power button like in the Smart Life app. The state refreshes by itself every 12 seconds.
-- Wide tiles: any tile can be stretched to two columns with a right click (like the “P C” card in the app).
+- Wide tiles: any tile can be stretched to two columns with a right click or the “Wide tile” checkbox in the device window (like the “P C” card in the app).
 - Device window: click a tile to open a window with a big button, electricity (power, voltage, current, energy), the socket timer and settings, as in the Smart Life app.
 - Tile order: drag tiles with the mouse, the order is remembered for each home (by default as Tuya returns it).
 - A turn-off timer on every tile (15 minutes, 30 minutes, 1, 2 or 4 hours).
