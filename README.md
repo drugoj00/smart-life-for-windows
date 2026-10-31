@@ -14,15 +14,19 @@ A free Windows program that shows the sockets and switches of your Smart Life (T
 
 ## Download
 
-**Version 1.1.** [SmartLifeForWindows-1.1.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
+**Version 2.0.** [SmartLifeForWindows-2.0.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
 
-SHA-256: `2f6c43dfb4f314d97e1fea3fa28cdbb71ebafec3b4458d54cc5529ec3b2a68af`
+SHA-256: `78fe9b75522227313845a7bbbb35071ad95d0f9cd60890fa864b303a94eca809`
 
-## What's new in 1.1
+## What's new in 2.0
 
-- Multi-channel sockets (230 V and USB) and power strips: a button per channel on the tile and in the device window.
-- “Turn the device on/off” (tray menu, “Turn everything off”, scenes, schedules, timer) acts on all channels.
-- Fixed: a combined socket controlled only one channel (USB), the other was not shown.
+- “Device codes”: assign power, voltage, current and energy by hand; automatic Tuya block detection.
+- Energy use for a day, 7 and 30 days and its cost; power protection.
+- Desktop shortcuts for sockets and scenes; Windows notifications.
+- Server agent: schedules keep running while the computer is off.
+- Faster: a shortcut runs within a second, the socket status in the window changes at once.
+- About window, transfer view, tooltips on every button, compact menus, a tile width checkbox.
+- Fixed: Apps & features showed version 1.0.
 
 ## Features
 
@@ -42,6 +46,14 @@ SHA-256: `2f6c43dfb4f314d97e1fea3fa28cdbb71ebafec3b4458d54cc5529ec3b2a68af`
 - Light and dark themes; Russian, Ukrainian and English (by Windows language or chosen manually).
 - Tiles adapt to the window size: all of them fit, and when space is tight the window scrolls row by row.
 - QR sign-in without a password (the user code is remembered) and a backup email and password sign-in with a country list.
+- Device codes: a table that assigns power, voltage, current and energy for any device; automatic detection of the Tuya block, pasting codes from a received text.
+- Energy use: consumption for today, 7 and 30 days and the cost at your price per kWh.
+- Power protection: a device turns off when the power stays above a threshold longer than the set time.
+- Desktop shortcuts for sockets and your own scenes: run without a window, with a result message within a second.
+- Windows notifications: a device went offline or came back, a schedule, timer or protection fired.
+- Server agent: schedules, scenes and power protection keep working while the computer is off (the Server folder).
+- Transfer view: tile order and wide tiles are saved to a file and loaded on another computer.
+- Tooltips on every button, compact menus and lists, a drawn check mark on checked boxes, an About window.
 
 ## Screenshots
 
@@ -67,7 +79,7 @@ Windows 10 or 11 (64-bit); a Smart Life (or Tuya Smart) account and a phone with
 
 ### 1. Installation
 
-Download the installer SmartLifeForWindows-1.1.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
+Download the installer SmartLifeForWindows-2.0.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
 
 Uninstall it the usual way: Windows Settings → Apps. The uninstaller asks whether to delete the saved sign-in too.
 
@@ -155,7 +167,7 @@ The window’s cross only hides it by the clock: the program and the icon stay; 
 
 On the very first start the window is narrow (two columns). Window sizes and positions are remembered. If all tiles do not fit, they become more compact; when it is tight even so, a scroll bar appears and the mouse wheel scrolls one row at a time, so the last row is never cut off.
 
-![The “⋯” menu: theme, language, sign out.](screenshots/en/11-menu.png)
+![The “⋯” menu: theme, language, transfer view, notifications, server, sign out.](screenshots/en/11-menu.png)
 
 ![A narrow two-column window (how the window opens the first time).](screenshots/en/03-two-columns.png)
 
@@ -165,22 +177,55 @@ The sign-in screen has a “By email and password” tab: email, password, the a
 
 ![Backup email sign-in: a country list with flags.](screenshots/en/10-sign-in-email.png)
 
-### 15. Where the data is stored
+### 15. Device codes
+
+If a device shows no power or voltage, open its window and click “Device codes”. In the table choose for each numeric code what it means (power, voltage, current, energy), set a divisor if needed (10, 100, 1000) and check the Reading column against the Smart Life app. Click Save: the readings appear in the Electricity block and the setting is remembered for all devices of this model. The standard Tuya block (phase_a) is detected automatically.
+
+“Copy codes” copies the list of codes as text (without the device name, id and keys) to send to the developer. “⋯” → “Paste device codes…” parses such a text sent by another user.
+
+![Device codes: what each code means, the divisor and the reading.](screenshots/en/16-codes.png)
+
+### 16. Energy use and power protection
+
+A device window with a power reading or an energy counter shows the consumption for today, 7 and 30 days (counted while the program runs). “⋯” → “Electricity price…”: the price per kWh with the currency name, for example “0.15 EUR”; the cost appears next to the consumption.
+
+Power protection: in the device window enable “Turn the device off when the power is exceeded” and set watts and seconds. When the power stays above the threshold longer than the set time, the device is turned off once. It works while the program or the server agent is running.
+
+![Device window: energy use, cost and power protection.](screenshots/en/17-device-energy.png)
+
+### 17. Shortcuts and notifications
+
+Right-click a tile: “Desktop shortcut: turn on” or “…: turn off”; right-click your own scene: “Desktop shortcut”. The shortcut runs the program without a window: “Working…” appears in the screen corner, then “Turned on: …”. The same commands from the command line: SmartLifeForWindows.exe --device "Name" --on (or --off) and SmartLifeForWindows.exe --scene "Name". Important sockets ask for confirmation before being turned off.
+
+Windows notifications: “⋯” → “Windows notifications”: when a device goes offline or comes back; when a schedule, timer or power protection fired (off by default).
+
+### 18. Server agent
+
+The Server folder (installed with the program; “⋯” → “For a server” → “Open the server agent folder”) contains a windowless agent. It runs your schedules, scenes and power protection on any server or mini computer with Python or Docker while the Windows computer is off. “Prepare the file for a server…” saves a file with the sign-in and settings (it contains the sign-in key of your account: keep it like a password). Enable “A server runs the schedules” so they do not fire twice. Tile timers are not moved to the server. Details: the README in the Server folder.
+
+### 19. Transfer view and tile width
+
+“⋯” → “Transfer view”: “Save the view to a file…” writes the tile order and wide tiles (without the sign-in, scenes and schedules), “Load the view from a file…” applies the file on another computer. Tile width can be changed in the device window (Appearance section) or by right-clicking the tile.
+
+### 20. Where the data is stored
 
 All data lives in your Windows profile: %APPDATA%\SmartLifeForWindows\данные\.
 
 - session.json: the access key to your sockets. Never share this file.
 - settings.json: theme, language, window sizes and positions, your scenes and schedules, the user code.
 - config.json: the list of important sockets (protected), tiles that are wide by default (wide), the default tile order (order) and the refresh period (refresh_seconds).
+- energy.json: energy use by day.
+- profiles.json: the code assignment for device models.
+- devices_cache.json: the remembered device list for fast shortcuts.
 
 The program talks only to Tuya servers, sends nothing to the developer, and has no ads or analytics. It needs neither your password nor your email.
 
-### 16. Limitations
+### 21. Limitations
 
 - The program is unofficial and not affiliated with Tuya or Smart Life. For QR sign-in it uses the public identifier of the Home Assistant integration.
 - Devices with a switch are controlled (sockets, relays, plain lamps). Sensors, cameras, colour lamps and the like are not controlled; a device without a switch is shown as “no switch”.
 - Smart Life automations are not available through this interface.
-- Your own scenes and schedules work only while the program is running (you can minimize the window to the tray and the program keeps working; after “Quit” or when the computer is off, schedules do not run).
+- Your own scenes and schedules work only while the program is running (you can minimize the window to the tray and the program keeps working; after “Quit” or when the computer is off, schedules do not run; the server agent covers work without the computer).
 - Tested on Windows 11 with a Smart Life account (two homes, about 30 sockets). 64-bit Windows 10 or 11 is required.
 
 ## Built with
