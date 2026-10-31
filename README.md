@@ -23,7 +23,7 @@ SHA-256: `78fe9b75522227313845a7bbbb35071ad95d0f9cd60890fa864b303a94eca809`
 - “Device codes”: assign power, voltage, current and energy by hand; automatic Tuya block detection.
 - Energy use for a day, 7 and 30 days and its cost; power protection.
 - Desktop shortcuts for sockets and scenes; Windows notifications.
-- Server agent: schedules keep running while the computer is off.
+- Server agent (server, mini PC, NAS): schedules, scenes and power protection keep working while the computer is off.
 - Faster: a shortcut runs within a second, the socket status in the window changes at once.
 - About window, transfer view, tooltips on every button, compact menus.
 - A tile can be stretched to two columns: the “Wide tile” checkbox in the device window.
