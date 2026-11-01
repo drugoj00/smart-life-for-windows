@@ -14,19 +14,14 @@ A free Windows program that shows the sockets and switches of your Smart Life (T
 
 ## Download
 
-**Version 3.0.** [SmartLifeForWindows-3.0.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
+**Version 3.1.** [SmartLifeForWindows-3.1.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
 
-SHA-256: `2294727184550b61ae902dd49424e23e7b0686e900b3faa710a7615b37d7dde5`
+SHA-256: `42e3af23c41a871a14268f36c48c832ceb7270c417d26d0713d9688518d02127`
 
-## What's new in 3.0
+## What's new in 3.1
 
-- Dual day/night tariff and energy “from the grid” and “to the grid” for bidirectional meters.
-- Program window background: colour, picture, GIF or video; dimming and blur for each background and for all at once.
-- Text over a background is readable: the colour adapts to brightness (light on dark, black on light), a thin outline or a glow.
-- Animation in icons and backgrounds: GIF, WebP and video (a part up to 30 seconds with two handles: start and end).
-- Your own device icons in five places: next to the name, instead of the power button, as the tile background, as the device window background and as the background of all windows. Any file, hundreds of emoji to choose from, clipboard, dropping onto a tile; each place keeps its own icon.
-- A large icon next to the name: the name on top, the status under it, a large icon at the bottom.
-- Fixed: a crash when closing the program with an animation; a small window that flashed in the middle of the screen at every data refresh.
+- Your own channel names for multi-socket plugs and power strips: right-click a channel button or caption, “Rename channel…”. The name shows on the tile and in the device window and is kept for each device.
+- The USB channel is recognised even when the plug does not call it switch_usb: by the channel name in the Tuya description, and if there is none, name the channel “USB” yourself.
 
 ## Features
 
@@ -63,6 +58,10 @@ SHA-256: `2294727184550b61ae902dd49424e23e7b0686e900b3faa710a7615b37d7dde5`
 
 ## Screenshots
 
+![Your own channel names on a power strip: Lamp, Fan, USB.](screenshots/en/30-channel-names.png)
+
+![Right-click a channel: “Rename channel…”.](screenshots/en/31-channel-rename.png)
+
 ![How it works: window and tile backgrounds, the “Where to put the icon?” question, animation.](screenshots/en/28-demo-icons-backgrounds.gif)
 
 ![Icons in different places: next to the name, instead of the button, as the tile background.](screenshots/en/19-icons-places.png)
@@ -73,7 +72,7 @@ SHA-256: `2294727184550b61ae902dd49424e23e7b0686e900b3faa710a7615b37d7dde5`
 
 ![A bidirectional meter: energy from and to the grid, consumption at two tariffs.](screenshots/en/26-device-energy-grid.png)
 
-![Multi-channel sockets and power strips: a button per channel (1, 2, USB).](screenshots/en/14-multi.png)
+![Multi-channel sockets and power strips: a button per channel (1, 2, USB); right-click: your own channel name.](screenshots/en/14-multi.png)
 
 ![Main window (dark theme): home tiles, a wide tile, a timer on a tile.](screenshots/en/01-main-dark.png)
 
@@ -95,7 +94,7 @@ Windows 10 or 11 (64-bit); a Smart Life (or Tuya Smart) account and a phone with
 
 ### 1. Installation
 
-Download the installer SmartLifeForWindows-3.0.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
+Download the installer SmartLifeForWindows-3.1.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
 
 Uninstall it the usual way: Windows Settings → Apps. The uninstaller asks whether to delete the saved sign-in too.
 
