@@ -16,7 +16,7 @@ A free Windows program that shows the sockets and switches of your Smart Life (T
 
 **Version 3.0.** [SmartLifeForWindows-3.0.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
 
-SHA-256: `9b4c81613526e25025439d4ab4a4f4f98827208f5f2216fc407e5fc980f5deb9`
+SHA-256: `2294727184550b61ae902dd49424e23e7b0686e900b3faa710a7615b37d7dde5`
 
 ## What's new in 3.0
 
@@ -26,7 +26,7 @@ SHA-256: `9b4c81613526e25025439d4ab4a4f4f98827208f5f2216fc407e5fc980f5deb9`
 - Animation in icons and backgrounds: GIF, WebP and video (a part up to 30 seconds with two handles: start and end).
 - Your own device icons in five places: next to the name, instead of the power button, as the tile background, as the device window background and as the background of all windows. Any file, hundreds of emoji to choose from, clipboard, dropping onto a tile; each place keeps its own icon.
 - A large icon next to the name: the name on top, the status under it, a large icon at the bottom.
-- Fixed: a crash when closing the program with an animation.
+- Fixed: a crash when closing the program with an animation; a small window that flashed in the middle of the screen at every data refresh.
 
 ## Features
 
