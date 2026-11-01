@@ -20,11 +20,11 @@ SHA-256: `9b4c81613526e25025439d4ab4a4f4f98827208f5f2216fc407e5fc980f5deb9`
 
 ## What's new in 3.0
 
-- Your own device icons in five places: next to the name, instead of the power button, as the tile background, as the device window background and as the background of all windows. Any file, hundreds of emoji to choose from, clipboard, dropping onto a tile; each place keeps its own icon.
-- Animation in icons and backgrounds: GIF, WebP and video (a part up to 30 seconds with two handles: start and end).
+- Dual day/night tariff and energy “from the grid” and “to the grid” for bidirectional meters.
 - Program window background: colour, picture, GIF or video; dimming and blur for each background and for all at once.
 - Text over a background is readable: the colour adapts to brightness (light on dark, black on light), a thin outline or a glow.
-- Dual day/night tariff and energy “from the grid” and “to the grid” for bidirectional meters.
+- Animation in icons and backgrounds: GIF, WebP and video (a part up to 30 seconds with two handles: start and end).
+- Your own device icons in five places: next to the name, instead of the power button, as the tile background, as the device window background and as the background of all windows. Any file, hundreds of emoji to choose from, clipboard, dropping onto a tile; each place keeps its own icon.
 - A large icon next to the name: the name on top, the status under it, a large icon at the bottom.
 - Fixed: a crash when closing the program with an animation.
 
