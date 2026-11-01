@@ -309,4 +309,3 @@ The program is free. If it is useful to you, you can support its development by 
 
 - By card or Google Pay (from 50 UAH): https://secure.wayforpay.com/button/bba92579a4647
 - USDT (TRON TRC20): `TXk32CLkwJryTqhmkw6urcM5CacJgPsSpJ`
-- IBAN (voluntary donation): `UA413052990000026004040212620`
