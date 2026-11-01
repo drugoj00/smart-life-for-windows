@@ -309,3 +309,4 @@ Python і Qt (PySide6, LGPL), офіційна бібліотека Tuya Device 
 
 - Карткою або Google Pay (від 50 грн): https://secure.wayforpay.com/button/bba92579a4647
 - USDT (TRON TRC20): `TXk32CLkwJryTqhmkw6urcM5CacJgPsSpJ`
+- IBAN (добровільний внесок): `UA413052990000026004040212620`
