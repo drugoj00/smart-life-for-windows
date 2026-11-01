@@ -14,20 +14,19 @@ A free Windows program that shows the sockets and switches of your Smart Life (T
 
 ## Download
 
-**Version 2.0.** [SmartLifeForWindows-2.0.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
+**Version 3.0.** [SmartLifeForWindows-3.0.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
 
-SHA-256: `78fe9b75522227313845a7bbbb35071ad95d0f9cd60890fa864b303a94eca809`
+SHA-256: `9b4c81613526e25025439d4ab4a4f4f98827208f5f2216fc407e5fc980f5deb9`
 
-## What's new in 2.0
+## What's new in 3.0
 
-- “Device codes”: assign power, voltage, current and energy by hand; automatic Tuya block detection.
-- Energy use for a day, 7 and 30 days and its cost; power protection.
-- Desktop shortcuts for sockets and scenes; Windows notifications.
-- Server agent (server, mini PC, NAS): schedules, scenes and power protection keep working while the computer is off.
-- Faster: a shortcut runs within a second, the socket status in the window changes at once.
-- About window, transfer view, tooltips on every button, compact menus.
-- A tile can be stretched to two columns: the “Wide tile” checkbox in the device window.
-- Fixed: Apps & features showed version 1.0.
+- Your own device icons in five places: next to the name, instead of the power button, as the tile background, as the device window background and as the background of all windows. Any file, hundreds of emoji to choose from, clipboard, dropping onto a tile; each place keeps its own icon.
+- Animation in icons and backgrounds: GIF, WebP and video (a part up to 30 seconds with two handles: start and end).
+- Program window background: colour, picture, GIF or video; dimming and blur for each background and for all at once.
+- Text over a background is readable: the colour adapts to brightness (light on dark, black on light), a thin outline or a glow.
+- Dual day/night tariff and energy “from the grid” and “to the grid” for bidirectional meters.
+- A large icon next to the name: the name on top, the status under it, a large icon at the bottom.
+- Fixed: a crash when closing the program with an animation.
 
 ## Features
 
@@ -54,9 +53,25 @@ SHA-256: `78fe9b75522227313845a7bbbb35071ad95d0f9cd60890fa864b303a94eca809`
 - Windows notifications: a device went offline or came back, a schedule, timer or protection fired.
 - Server agent: schedules, scenes and power protection keep working while the computer is off (the Server folder).
 - Transfer view: tile order and wide tiles are saved to a file and loaded on another computer.
+- Your own device icons in five places: next to the name (large), instead of the power button (the picture fills the whole circle), as the tile background, as the device window background and as the background of all program windows. Any picture or file works (png, jpg, gif, webp, svg, even an exe icon), ready-made emoji, a picture from the clipboard and dragging a file onto a tile. Each place keeps its own icon: changing one does not touch the others.
+- Animated icons and backgrounds: GIF and WebP, and also video. Choose a part up to 30 seconds with two handles (start and end), and the program builds a light animation of the right size.
+- Program window background: your own colour, picture, GIF or video. Dimming and blur are set for each background separately and for all at once (“⋯” → “Window background…”).
+- Readable text over a background: over a picture or video the labels adapt to the brightness of the background (light on dark, black on light) and get a thin outline or a soft glow; the font stays the same.
+- Energy “from the grid” and “to the grid” for bidirectional meters (import and export): the codes are picked up automatically or assigned in “Device codes”.
+- Dual tariff: a day price and a night price with your own night hours; the cost of consumption uses both prices.
 - Tooltips on every button, compact menus and lists, a drawn check mark on checked boxes, an About window.
 
 ## Screenshots
+
+![How it works: window and tile backgrounds, the “Where to put the icon?” question, animation.](screenshots/en/28-demo-icons-backgrounds.gif)
+
+![Icons in different places: next to the name, instead of the button, as the tile background.](screenshots/en/19-icons-places.png)
+
+![The main window with a program-wide background and tile backgrounds.](screenshots/en/27-main-window-bg.png)
+
+![An open card with a window background: the text adapts to the background brightness.](screenshots/en/22-device-window-bg.png)
+
+![A bidirectional meter: energy from and to the grid, consumption at two tariffs.](screenshots/en/26-device-energy-grid.png)
 
 ![Multi-channel sockets and power strips: a button per channel (1, 2, USB).](screenshots/en/14-multi.png)
 
@@ -80,7 +95,7 @@ Windows 10 or 11 (64-bit); a Smart Life (or Tuya Smart) account and a phone with
 
 ### 1. Installation
 
-Download the installer SmartLifeForWindows-2.0.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
+Download the installer SmartLifeForWindows-3.0.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
 
 Uninstall it the usual way: Windows Settings → Apps. The uninstaller asks whether to delete the saved sign-in too.
 
@@ -188,11 +203,17 @@ If a device shows no power or voltage, open its window and click “Device codes
 
 ### 16. Energy use and power protection
 
-A device window with a power reading or an energy counter shows the consumption for today, 7 and 30 days (counted while the program runs). “⋯” → “Electricity price…”: the price per kWh with the currency name, for example “0.15 EUR”; the cost appears next to the consumption.
+A device window with a power reading or an energy counter shows the consumption for today, 7 and 30 days (counted while the program runs). “⋯” → “Electricity price…”: the day price per kWh and the currency, for example “0.15 EUR”; if you like, switch on “Night tariff”, set the night price and the night hours (23 to 7 by default), and the cost uses both prices. The program logs consumption by the hour since version 3.0; earlier days are priced at the day price.
+
+Bidirectional meters (for example with solar panels) show “Energy from grid” (import) and “Energy to grid” (export), and the device window splits consumption into “from grid” and “to grid”. The standard codes forward_energy_total and reverse_energy_total are picked up automatically, others are assigned in “Device codes” (the roles “Energy from grid” and “Energy to grid”).
 
 Power protection: in the device window enable “Turn the device off when the power is exceeded” and set watts and seconds. When the power stays above the threshold longer than the set time, the device is turned off once. It works while the program or the server agent is running.
 
 ![Device window: energy use, cost and power protection.](screenshots/en/17-device-energy.png)
+
+![Electricity price: day and night, the night hours.](screenshots/en/25-tariff-dialog.png)
+
+![A bidirectional meter: energy from and to the grid, consumption at two tariffs.](screenshots/en/26-device-energy-grid.png)
 
 ### 17. Shortcuts and notifications
 
@@ -208,20 +229,65 @@ The Server folder (installed with the program; “⋯” → “For a server” 
 
 “⋯” → “Transfer view”: “Save the view to a file…” writes the tile order and wide tiles (without the sign-in, scenes and schedules), “Load the view from a file…” applies the file on another computer. Tile width can be changed in the device window (Appearance section) or by right-clicking the tile.
 
-### 20. Where the data is stored
+### 20. Device icons
+
+Right-click a tile → “Device icon…” (or the “Device icons…” button in the device window). An icon can be placed in five places:
+
+- next to the name: a large icon under the name and the status, sized to the tile height;
+- instead of the power button: the picture fills the whole circle, a green ring means “on”, a grey icon means “off”;
+- as the tile background;
+- as the device window background (opened by clicking a tile);
+- as the background of all program windows.
+
+Choose the place in the “Where to put” list, then a ready picture, “Emoji…” (hundreds of emoji or your own pasted into the field), “Own file…”, “From clipboard”, or drag a file into the window. You can also drop a file straight onto a tile or into the device window: the program asks “Where to put the icon?” and prepares the picture for the chosen place (without margins for the button and backgrounds, square for the icon next to the name). Any file works: a picture, an animated GIF or WebP, an exe or folder icon, a video.
+
+Each place keeps its own icon: changing one does not touch the others. “Remove here” removes the icon only in that place, “Remove everywhere” removes all of them; right-click a tile → “Remove all icons”. Icons are visible only in this program; they do not change in the Smart Life app.
+
+![Icons in different places: next to the name, instead of the button, as the tile background.](screenshots/en/19-icons-places.png)
+
+![The “Device icons” window: where to put it, ready pictures, background dimming and blur.](screenshots/en/20-icon-dialog.png)
+
+![Choosing an emoji: hundreds of ready ones in tabs and a field for your own.](screenshots/en/29-emoji-dialog.png)
+
+![After a file is dropped the program asks where to put the icon.](screenshots/en/21-icon-place-question.png)
+
+### 21. Backgrounds of tiles, windows and the program
+
+The tile background and the device window background are set in the same “Device icons…” window (the places “As the tile background” and “As the device window background”). The background of all program windows is the place “As the background of all program windows” or “⋯” → “Window background…”, where you can also choose your own colour.
+
+Every background has two sliders: “Dimming” and “Blur”. In “⋯” → “Window background…” the “Card and card-window backgrounds” section gathers them all: an “All at once” row and a separate row for each background.
+
+Over a background the labels choose their colour by the brightness of the picture under them: light text on dark, black on light, with a thin outline (bold text) or a soft glow (regular text). The font size and style do not change. Pictures for a background are prepared in good quality (up to 1280 or 1600 pixels), videos up to 30 seconds.
+
+![An open card with a window background: the text adapts to the background brightness.](screenshots/en/22-device-window-bg.png)
+
+![“Window background”: colour, picture, dimming, blur and the settings of all backgrounds at once.](screenshots/en/23-bg-dialog.png)
+
+![The main window with a program-wide background and tile backgrounds.](screenshots/en/27-main-window-bg.png)
+
+### 22. Video and animation in icons
+
+You can set an animation like this: drop a GIF or WebP on a tile (they stay as they are, up to 8 MB) or a video (mp4, mkv, avi, mov, webm and others). For a video the “Icon from a video” window opens: move the left handle (start) and the right handle (end); the window shows the frame at the handle you are moving. The part is 0.5 to 30 seconds long and the program builds a light animation: the longer the part, the fewer the frames per second and the smaller the picture (a long part takes a few megabytes). For a long video switch on “Zoom the timeline”: the scale shows only the area around the part and the time labels at its ends. Start and end can also be adjusted with numbers.
+
+The animation runs only while the icon is visible on screen; the tray menu shows the first frame. Sound is not used, a video has no transparency.
+
+![An icon from a video: two handles set the start and the end of the part.](screenshots/en/24-video-dialog.png)
+
+### 23. Where the data is stored
 
 All data lives in your Windows profile: %APPDATA%\SmartLifeForWindows\данные\.
 
 - session.json: the access key to your sockets. Never share this file.
 - settings.json: theme, language, window sizes and positions, your scenes and schedules, the user code.
 - config.json: the list of important sockets (protected), tiles that are wide by default (wide), the default tile order (order) and the refresh period (refresh_seconds).
-- energy.json: energy use by day.
+- energy.json: energy use by day and hour, and energy given to the grid.
+- значки\ and фоны\: your pictures for icons and backgrounds.
 - profiles.json: the code assignment for device models.
 - devices_cache.json: the remembered device list for fast shortcuts.
 
 The program talks only to Tuya servers, sends nothing to the developer, and has no ads or analytics. It needs neither your password nor your email.
 
-### 21. Limitations
+### 24. Limitations
 
 - The program is unofficial and not affiliated with Tuya or Smart Life. For QR sign-in it uses the public identifier of the Home Assistant integration.
 - Devices with a switch are controlled (sockets, relays, plain lamps). Sensors, cameras, colour lamps and the like are not controlled; a device without a switch is shown as “no switch”.
