@@ -309,4 +309,4 @@ Python и Qt (PySide6, LGPL), официальная библиотека Tuya D
 
 - Картой или Google Pay (от 50 грн): https://secure.wayforpay.com/button/bba92579a4647
 - USDT (TRON TRC20): `TXk32CLkwJryTqhmkw6urcM5CacJgPsSpJ`
-- IBAN (добровольный взнос): `UA413052990000026004040212620`
+- IBAN (добровольное пожертвование): `UA413052990000026004040212620`
