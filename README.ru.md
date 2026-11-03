@@ -16,7 +16,7 @@
 
 **Версия 3.2.** [SmartLifeForWindows-3.2.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
 
-SHA-256: `19cc0a6f95542befc1a46139b25b89946d8b0358ed1bf0676de37976a590c6ac`
+SHA-256: `96de79d0b5d9b371d61bf4c760cec94f72d66faf5535b5591f82ab96ec098ee1`
 
 ## Что нового в 3.2
 
