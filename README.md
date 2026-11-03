@@ -14,14 +14,15 @@ A free Windows program that shows the sockets and switches of your Smart Life (T
 
 ## Download
 
-**Version 3.1.** [SmartLifeForWindows-3.1.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
+**Version 3.2.** [SmartLifeForWindows-3.2.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
 
-SHA-256: `42e3af23c41a871a14268f36c48c832ceb7270c417d26d0713d9688518d02127`
+SHA-256: `19cc0a6f95542befc1a46139b25b89946d8b0358ed1bf0676de37976a590c6ac`
 
-## What's new in 3.1
+## What's new in 3.2
 
-- Your own channel names for multi-socket plugs and power strips: right-click a channel button or caption, “Rename channel…”. The name shows on the tile and in the device window and is kept for each device.
-- The USB channel is recognised even when the plug does not call it switch_usb: by the channel name in the Tuya description, and if there is none, name the channel “USB” yourself.
+- Energy from the grid for bidirectional meters: the total_forward_energy reading is now recognised (for example on a Breaker).
+- The device list remembers its position: it starts from the very top, and after any action or refresh it stays where it was.
+- Self-update: the About window has a “Check for updates” button; a new version is downloaded with a checksum check and installed over the old one, automatically if you choose.
 
 ## Features
 
@@ -94,7 +95,7 @@ Windows 10 or 11 (64-bit); a Smart Life (or Tuya Smart) account and a phone with
 
 ### 1. Installation
 
-Download the installer SmartLifeForWindows-3.1.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
+Download the installer SmartLifeForWindows-3.2.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
 
 Uninstall it the usual way: Windows Settings → Apps. The uninstaller asks whether to delete the saved sign-in too.
 
