@@ -14,11 +14,11 @@ A free Windows program that shows the sockets and switches of your Smart Life (T
 
 ## Download
 
-**Version 3.3.** [SmartLifeForWindows-3.3.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
+**Version 4.0.** [SmartLifeForWindows-4.0.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
 
-SHA-256: `6392062b9f5977c15c710b05d26d9a128256bc099296f9fe8fab84f3c8d4c150`
+SHA-256: `d8a6bb92127b97e19e5eef3907c63288f93fa72b01368d90f652a75aedf0be75`
 
-## What's new in 3.3
+## What's new in 4.0
 
 - The installer is smaller.
 
@@ -93,7 +93,7 @@ Windows 10 or 11 (64-bit); a Smart Life (or Tuya Smart) account and a phone with
 
 ### 1. Installation
 
-Download the installer SmartLifeForWindows-3.3.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
+Download the installer SmartLifeForWindows-4.0.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
 
 Uninstall it the usual way: Windows Settings → Apps. The uninstaller asks whether to delete the saved sign-in too.
 
