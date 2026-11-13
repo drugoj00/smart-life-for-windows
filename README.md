@@ -14,15 +14,13 @@ A free Windows program that shows the sockets and switches of your Smart Life (T
 
 ## Download
 
-**Version 3.2.** [SmartLifeForWindows-3.2.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
+**Version 3.3.** [SmartLifeForWindows-3.3.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
 
-SHA-256: `96de79d0b5d9b371d61bf4c760cec94f72d66faf5535b5591f82ab96ec098ee1`
+SHA-256: `6392062b9f5977c15c710b05d26d9a128256bc099296f9fe8fab84f3c8d4c150`
 
-## What's new in 3.2
+## What's new in 3.3
 
-- Energy from the grid for bidirectional meters: the total_forward_energy reading is now recognised (for example on a Breaker).
-- The device list remembers its position: it starts from the very top, and after any action or refresh it stays where it was.
-- Self-update: the About window has a “Check for updates” button; a new version is downloaded with a checksum check and installed over the old one, automatically if you choose.
+- The installer is smaller.
 
 ## Features
 
@@ -95,7 +93,7 @@ Windows 10 or 11 (64-bit); a Smart Life (or Tuya Smart) account and a phone with
 
 ### 1. Installation
 
-Download the installer SmartLifeForWindows-3.2.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
+Download the installer SmartLifeForWindows-3.3.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
 
 Uninstall it the usual way: Windows Settings → Apps. The uninstaller asks whether to delete the saved sign-in too.
 
