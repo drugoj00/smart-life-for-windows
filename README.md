@@ -14,18 +14,21 @@ A free Windows program that shows the sockets and switches of your Smart Life (T
 
 ## Download
 
-**Version 4.0.** [SmartLifeForWindows-4.0.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
+**Version 5.0.** [SmartLifeForWindows-5.0.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
 
-SHA-256: `d8a6bb92127b97e19e5eef3907c63288f93fa72b01368d90f652a75aedf0be75`
+SHA-256: `30fa733f9817c9eb7620a550ff08230f29e1bc7b49e527c9297792f81f29f3a9`
 
-## What's new in 4.0
+## What's new in 5.0
 
-- The installer is smaller.
+- Temperature and humidity sensors.
+- The update window shows What's new.
+- Bug fixes.
 
 ## Features
 
 - Socket tiles grouped by home: name, state (on, off, offline) and a large round power button like in the Smart Life app. The state refreshes by itself every 12 seconds.
 - Wide tiles: any tile can be stretched to two columns with a right click or the “Wide tile” checkbox in the device window (like the “P C” card in the app).
+- Temperature and humidity sensors: a tile with temperature, humidity and battery level; the device window has the °C/°F unit, limits, alarms and sensitivity (limits are sent only with the Apply button).
 - Device window: click a tile to open a window with a big button, electricity (power, voltage, current, energy), the socket timer and settings, as in the Smart Life app.
 - Tile order: drag tiles with the mouse, the order is remembered for each home (by default as Tuya returns it).
 - A turn-off timer on every tile (15 minutes, 30 minutes, 1, 2 or 4 hours).
@@ -93,7 +96,7 @@ Windows 10 or 11 (64-bit); a Smart Life (or Tuya Smart) account and a phone with
 
 ### 1. Installation
 
-Download the installer SmartLifeForWindows-4.0.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
+Download the installer SmartLifeForWindows-5.0.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
 
 Uninstall it the usual way: Windows Settings → Apps. The uninstaller asks whether to delete the saved sign-in too.
 
