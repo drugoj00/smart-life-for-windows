@@ -14,15 +14,14 @@ A free Windows program that shows the sockets and switches of your Smart Life (T
 
 ## Download
 
-**Version 5.0.** [SmartLifeForWindows-5.0.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
+**Version 6.0.** [SmartLifeForWindows-6.0.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
 
-SHA-256: `30fa733f9817c9eb7620a550ff08230f29e1bc7b49e527c9297792f81f29f3a9`
+SHA-256: `6282323fdddc66e2cb0f131f4c7993dff1e8ae2c0b2a89f7c649c59f29bbfcff`
 
-## What's new in 5.0
+## What's new in 6.0
 
-- Temperature and humidity sensors.
-- The update window shows What's new.
-- Bug fixes.
+- Desktop shortcut for scenes from the mobile app (right-click a scene).
+- Hint about the shortcut on the Scenes tab.
 
 ## Features
 
@@ -96,7 +95,7 @@ Windows 10 or 11 (64-bit); a Smart Life (or Tuya Smart) account and a phone with
 
 ### 1. Installation
 
-Download the installer SmartLifeForWindows-5.0.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
+Download the installer SmartLifeForWindows-6.0.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
 
 Uninstall it the usual way: Windows Settings → Apps. The uninstaller asks whether to delete the saved sign-in too.
 
