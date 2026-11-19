@@ -14,20 +14,25 @@ A free Windows program that shows the sockets and switches of your Smart Life (T
 
 ## Download
 
-**Version 6.0.** [SmartLifeForWindows-6.0.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
+**Version 7.0.** [SmartLifeForWindows-7.0.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
 
-SHA-256: `6282323fdddc66e2cb0f131f4c7993dff1e8ae2c0b2a89f7c649c59f29bbfcff`
+SHA-256: `176c8ed227a3f30830bd2895e9078c8ba412d8bf3842215ececfc5eae51c64ba`
 
-## What's new in 6.0
+## What's new in 7.0
 
-- Desktop shortcut for scenes from the mobile app (right-click a scene).
-- Hint about the shortcut on the Scenes tab.
+- Faster device list loading and polling
+- The last list is shown at once on start
+- A scene shortcut starts with one request
+- Short messages about cloud connection failures, details in a log
+- IR hub and IR remotes without empty windows and a power button
+- A window with the cause when the Qt components fail to load
 
 ## Features
 
 - Socket tiles grouped by home: name, state (on, off, offline) and a large round power button like in the Smart Life app. The state refreshes by itself every 12 seconds.
 - Wide tiles: any tile can be stretched to two columns with a right click or the “Wide tile” checkbox in the device window (like the “P C” card in the app).
 - Temperature and humidity sensors: a tile with temperature, humidity and battery level; the device window has the °C/°F unit, limits, alarms and sensitivity (limits are sent only with the Apply button).
+- IR hub and IR remotes: the tile and the window explain that they are controlled in the Smart Life app; the app’s scenes with their buttons can be run from the Scenes tab.
 - Device window: click a tile to open a window with a big button, electricity (power, voltage, current, energy), the socket timer and settings, as in the Smart Life app.
 - Tile order: drag tiles with the mouse, the order is remembered for each home (by default as Tuya returns it).
 - A turn-off timer on every tile (15 minutes, 30 minutes, 1, 2 or 4 hours).
@@ -55,6 +60,7 @@ SHA-256: `6282323fdddc66e2cb0f131f4c7993dff1e8ae2c0b2a89f7c649c59f29bbfcff`
 - Readable text over a background: over a picture or video the labels adapt to the brightness of the background (light on dark, black on light) and get a thin outline or a soft glow; the font stays the same.
 - Energy “from the grid” and “to the grid” for bidirectional meters (import and export): the codes are picked up automatically or assigned in “Device codes”.
 - Dual tariff: a day price and a night price with your own night hours; the cost of consumption uses both prices.
+- Fast loading: one request per home on every refresh, the last list is shown at once on start, a scene shortcut starts with one request.
 - Tooltips on every button, compact menus and lists, a drawn check mark on checked boxes, an About window.
 
 ## Screenshots
@@ -89,13 +95,13 @@ SHA-256: `6282323fdddc66e2cb0f131f4c7993dff1e8ae2c0b2a89f7c649c59f29bbfcff`
 
 ## Requirements
 
-Windows 10 or 11 (64-bit); a Smart Life (or Tuya Smart) account and a phone with the app for the first sign-in; internet. Administrator rights are optional.
+Windows 10 (version 1809 or newer) or Windows 11 (64-bit); a Smart Life (or Tuya Smart) account and a phone with the app for the first sign-in; internet. Administrator rights are optional.
 
 ## Detailed guide
 
 ### 1. Installation
 
-Download the installer SmartLifeForWindows-6.0.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
+Download the installer SmartLifeForWindows-7.0.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
 
 Uninstall it the usual way: Windows Settings → Apps. The uninstaller asks whether to delete the saved sign-in too.
 
@@ -131,7 +137,7 @@ In the Smart Life app some cards (for example “P C”) take two columns. That 
 
 ### 5. Device window
 
-Click a tile (not the power button): the device window opens, as in the app. It has a big power button, electricity (power, voltage, current, accumulated energy, if the socket measures them), the socket timer (in how many minutes it switches itself), child lock and indicator light. Settings are available with the QR login; the data refreshes by itself. Tiles can still be dragged by their background: a click opens the window, a drag changes the order.
+Click a tile (not the power button): the device window opens, as in the app. It has a big power button, electricity (power, voltage, current, accumulated energy, if the socket measures them), the socket timer (in how many minutes it switches itself), child lock and indicator light. Settings are available with the QR login; the data refreshes by itself. Tiles can still be dragged by their background: a click opens the window, a drag changes the order. Temperature and humidity sensors show a tile with temperature, humidity and battery level; their window has the °C/°F unit, limits, alarms and sensitivity. An IR hub, IR remotes and other devices without a switch have no power button: the window shows an explanation; the IR hub and IR remotes are controlled in the Smart Life app.
 
 ![The device window: button, electricity, socket timer, settings.](screenshots/en/13-device.png)
 
@@ -173,7 +179,7 @@ The “Schedules” tab: “+ New schedule” → choose what to switch (a socke
 
 ### 12. Smart Life scenes
 
-If you have “tap-to-run” scenes in the Smart Life app, the program shows a “Scenes” tab with a “Run” button for each. Smart Life automations (by schedule and conditions) are not provided to third-party programs by Tuya: they are not visible in the program and keep working in the app as before.
+If you have “tap-to-run” scenes in the Smart Life app, the program shows a “Scenes” tab with a “Run” button for each. Smart Life automations (by schedule and conditions) are not provided to third-party programs by Tuya: they are not visible in the program and keep working in the app as before. Right-click a scene: “Desktop shortcut”; the shortcut stores the scene and home numbers and starts the scene with one request, including a scene with IR remote buttons.
 
 ### 13. Theme, language, window size
 
@@ -199,6 +205,8 @@ If a device shows no power or voltage, open its window and click “Device codes
 
 “Copy codes” copies the list of codes as text (without the device name, id and keys) to send to the developer. “⋯” → “Paste device codes…” parses such a text sent by another user.
 
+The table of an IR hub is empty: the cloud passes no codes for it. For an IR remote the table lists the button names (commands without a value), for viewing only.
+
 ![Device codes: what each code means, the divisor and the reading.](screenshots/en/16-codes.png)
 
 ### 16. Energy use and power protection
@@ -220,6 +228,8 @@ Power protection: in the device window enable “Turn the device off when the po
 Right-click a tile: “Desktop shortcut: turn on” or “…: turn off”; right-click your own scene: “Desktop shortcut”. The shortcut runs the program without a window: “Working…” appears in the screen corner, then “Turned on: …”. The same commands from the command line: SmartLifeForWindows.exe --device "Name" --on (or --off) and SmartLifeForWindows.exe --scene "Name". Important sockets ask for confirmation before being turned off.
 
 Windows notifications: “⋯” → “Windows notifications”: when a device goes offline or comes back; when a schedule, timer or power protection fired (off by default).
+
+A shortcut of a Smart Life scene stores the scene and home numbers (the --scene-id and --home-id parameters) and starts the scene with one request; if the number is out of date, the scene is looked up by name. When the connection fails, a short phrase is shown instead of a long technical text, and the cause is written to the сеть.log journal.
 
 ### 18. Server agent
 
@@ -284,16 +294,20 @@ All data lives in your Windows profile: %APPDATA%\SmartLifeForWindows\данны
 - значки\ and фоны\: your pictures for icons and backgrounds.
 - profiles.json: the code assignment for device models.
 - devices_cache.json: the remembered device list for fast shortcuts.
+- snapshot.json: the last received device list for an instant display at start (no access keys).
+- specs_cache.json: device descriptions (codes and ranges), refreshed once a week.
+- сеть.json and сеть.log: the cloud address that worked and the log of connection failures (the cause of the short message in the window).
+- ошибка_запуска.txt (in the %APPDATA%\SmartLifeForWindows\ folder, next to the data folder): the cause if the program did not start because of a component loading error.
 
 The program talks only to Tuya servers, sends nothing to the developer, and has no ads or analytics. It needs neither your password nor your email.
 
 ### 24. Limitations
 
 - The program is unofficial and not affiliated with Tuya or Smart Life. For QR sign-in it uses the public identifier of the Home Assistant integration.
-- Devices with a switch are controlled (sockets, relays, plain lamps). Sensors, cameras, colour lamps and the like are not controlled; a device without a switch is shown as “no switch”.
+- Devices with a switch are controlled (sockets, relays, plain lamps). Sensors, cameras, colour lamps and the like are not controlled; a device without a switch has no power button. The program does not control an IR hub and IR remotes: use the Smart Life app for them; the app’s scenes with their buttons can be run from the Scenes tab.
 - Smart Life automations are not available through this interface.
 - Your own scenes and schedules work only while the program is running (you can minimize the window to the tray and the program keeps working; after “Quit” or when the computer is off, schedules do not run; the server agent covers work without the computer).
-- Tested on Windows 11 with a Smart Life account (two homes, about 30 sockets). 64-bit Windows 10 or 11 is required.
+- Tested on Windows 11 with a Smart Life account (two homes, about 30 sockets). 64-bit Windows 10 (version 1809 or newer) or Windows 11 is required.
 
 ## Built with
 
