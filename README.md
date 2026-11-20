@@ -14,18 +14,19 @@ A free Windows program that shows the sockets and switches of your Smart Life (T
 
 ## Download
 
-**Version 7.0.** [SmartLifeForWindows-7.0.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
+**Version 7.1.** [SmartLifeForWindows-7.1.exe](https://github.com/drugoj00/smart-life-for-windows/releases/latest) (Assets) · [Releases](https://github.com/drugoj00/smart-life-for-windows/releases)
 
-SHA-256: `176c8ed227a3f30830bd2895e9078c8ba412d8bf3842215ececfc5eae51c64ba`
+SHA-256: `5c3ecde3707e945aba4cefad5670a9c185e770d557ccf501da44c694781edfed`
 
-## What's new in 7.0
+## What's new in 7.1
 
-- Faster device list loading and polling
-- The last list is shown at once on start
-- A scene shortcut starts with one request
-- Short messages about cloud connection failures, details in a log
-- IR hub and IR remotes without empty windows and a power button
-- A window with the cause when the Qt components fail to load
+- Hide IR remotes and unsupported devices, restore from “Hidden”
+- Hide cloud and own scenes
+- Order of scenes and devices: drag, “Up” and “Down”
+- Start screen to choose: devices, scenes, my scenes, last opened
+- A “Devices” button instead of “Back”, Esc and Backspace lead to devices
+- On/off shortcuts only for controllable devices
+- A progress bar in the installer and the “Icon from video” window
 
 ## Features
 
@@ -35,6 +36,8 @@ SHA-256: `176c8ed227a3f30830bd2895e9078c8ba412d8bf3842215ececfc5eae51c64ba`
 - IR hub and IR remotes: the tile and the window explain that they are controlled in the Smart Life app; the app’s scenes with their buttons can be run from the Scenes tab.
 - Device window: click a tile to open a window with a big button, electricity (power, voltage, current, energy), the socket timer and settings, as in the Smart Life app.
 - Tile order: drag tiles with the mouse, the order is remembered for each home (by default as Tuya returns it).
+- Hiding and order: IR remotes and devices without control are hidden with a right-click (“Hide from the list”) or all at once in “⋯”; nothing is deleted in the Smart Life account, hidden items do not come back when the list refreshes, the “Hidden” button above the list shows them and returns them. Cloud and own scenes are hidden the same way. The order of tiles and scenes is changed by dragging or by a right-click: “Order” → “To the start”, “Up”, “Down”, “To the end”.
+- Start screen: “⋯” → “Open at start”: devices, scenes, my scenes or the last opened. A “Devices” button next to the home button and the tabs; Esc and Backspace on the scene tabs lead to the devices.
 - A turn-off timer on every tile (15 minutes, 30 minutes, 1, 2 or 4 hours).
 - Multi-channel sockets and power strips: a device with several channels (230 V and USB, socket 1, 2, 3) gets a button per channel on its tile and in the device window; the common “turn on/off” (tray menu, “Turn everything off”, scenes, schedules, timer) acts on all channels.
 - Confirmation before turning off important sockets (computer, router and others; the list can be changed).
@@ -101,7 +104,7 @@ Windows 10 (version 1809 or newer) or Windows 11 (64-bit); a Smart Life (or Tuya
 
 ### 1. Installation
 
-Download the installer SmartLifeForWindows-7.0.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
+Download the installer SmartLifeForWindows-7.1.exe and run it. Windows asks for permission: the program is installed into C:\Program Files\SmartLifeForWindows. If you decline, it goes into your user folder. In the installer window you can add a desktop shortcut (off by default) and launch the program right away. A Start menu shortcut is always created. The installer language (Russian, Ukrainian, English) follows the Windows language and can be changed with the list in the top right corner of the window.
 
 Uninstall it the usual way: Windows Settings → Apps. The uninstaller asks whether to delete the saved sign-in too.
 
@@ -125,7 +128,7 @@ The user code is remembered. After that the program signs in by itself and renew
 
 ### 3. Main window
 
-At the top is a button with the name of the current home: click it and a list of all homes of the account opens (as in the Smart Life app); choose the one you need. The program remembers the last open home (the “My scenes” and “Schedules” tabs are not remembered). Next to it are the “My scenes” and “Schedules” tabs; on them a “← Back” button appears to the right of the home name and returns you to the home you were in. Below are the socket tiles of the selected home. A tile shows the name, the state (on, off, offline) and a round power button: green when on, grey when off, dimmed with a dashed border when the device is offline. Press the button to toggle the socket. The search box at the top finds sockets by name; “Refresh” updates the state at once (otherwise it updates by itself every 12 seconds). Sockets toggled on the phone are picked up within a few seconds.
+At the top is a button with the name of the current home: click it and a list of all homes of the account opens (as in the Smart Life app); choose the one you need. The program remembers the last open home (the screen to open at start is chosen in “⋯”). Next to it are the “Devices”, “Scenes”, “My scenes” and “Schedules” tabs; “Devices” returns to the home’s tiles from any tab (Esc and Backspace do the same). Below are the socket tiles of the selected home. A tile shows the name, the state (on, off, offline) and a round power button: green when on, grey when off, dimmed with a dashed border when the device is offline. Press the button to toggle the socket. The search box at the top finds sockets by name; “Refresh” updates the state at once (otherwise it updates by itself every 12 seconds). Sockets toggled on the phone are picked up within a few seconds.
 
 ![Main window (dark theme): home tiles, a wide tile, a timer on a tile.](screenshots/en/01-main-dark.png)
 
@@ -143,7 +146,7 @@ Click a tile (not the power button): the device window opens, as in the app. It 
 
 ### 6. Tile order
 
-Tuya gives third-party programs the devices in its own order (by the time they were added), while the order of cards in the Smart Life app (for example in “Favorites”) is stored inside the app and is not exposed. So the order is set separately in the program: take a tile with the mouse by its background (not by the power button) and drag it onto another tile; it takes that tile's place. The order is remembered for each home and is used in home windows. Dragging works in a home without a search filter. Menu “⋯” → “Reset tile order” returns Tuya's order. You can also preset the order in config.json: key order, for example {"Apartment": ["P C", "Printer"]}.
+Tuya gives third-party programs the devices in its own order (by the time they were added), while the order of cards in the Smart Life app (for example in “Favorites”) is stored inside the app and is not exposed. So the order is set separately in the program: take a tile with the mouse by its background (not by the power button) and drag it onto another tile; it takes that tile's place. The order is remembered for each home and is used in home windows. Dragging works in a home without a search filter. Menu “⋯” → “Reset tile and scene order” returns Tuya's order. You can also preset the order in config.json: key order, for example {"Apartment": ["P C", "Printer"]}.
 
 ### 7. Turn-off timer
 
